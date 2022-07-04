@@ -1,0 +1,414 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:black;
+    overflow: hidden;
+    font-family: Con90;
+/*     font-family: "Authentic 150", sans-serif; */
+    font-size: 15px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* @font-face {
+  font-family: "Authentic 150", sans-serif;
+  src: url(fonts/AUTHENTICSans-Condensed-150.woff2);
+  format('woff2');
+  font-weight: bold;
+} */
+
+@font-face {
+  font-family: Con130;
+  src: url('fonts/AUTHENTICSans-Condensed-130.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+@font-face {
+  font-family: Con60;
+  src: url('fonts/AUTHENTICSans-Condensed-60.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+@font-face {
+  font-family: Con90;
+  src: url('fonts/AUTHENTICSans-Condensed-90.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+@font-face {
+  font-family: San60;
+  src: url('fonts/AUTHENTICSans-60.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+@font-face {
+  font-family: San130;
+  src: url('fonts/AUTHENTICSans-130.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+@font-face {
+  font-family: Con150;
+  src: url('fonts/AUTHENTICSans-Condensed-150.otf')
+  /* src: url('fonts/Ogg-Italic.otf') */
+}
+
+
+.leftContainer {
+    width: 18%;
+    height: 100%;
+    position: relative;
+    color: #bebebe;
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.name {
+  text-decoration: none;
+  color: #bebebe;
+  font-family: Con150;
+}
+
+.topInfo{
+  display: none;
+}
+
+/* .gifLogo{
+  width: 100px;
+  position: relative;
+  left: 0px;
+} */
+
+.contact {
+  text-decoration: underline;
+  color: #bebebe;
+/*   font-family: Con130; */
+}
+ .mention{
+  text-decoration: underline;
+  color: #bebebe;
+  }
+
+.leftInfo{
+  margin-block-start: 1em;
+}
+
+.rightContainer {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-right: 1%;
+    padding-top: 1%;
+/*     padding-left: 8vw; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projectWrapper {
+    width: 100%;
+    height: 90%;
+/*     padding-top: 1%; */
+/*     padding-bottom: 1%; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.projectWrapper:first-child {
+    padding-top: 0;
+}
+
+.projectTextContent {
+    width: 35%;
+    height: 100%;
+    color: #bebebe;
+  padding-right: 10px;
+/*     background: blue; */
+}
+
+
+.projectLink{
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 65%;
+}
+
+.projectLinkImage{
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+/*   webkit-filter: blur(4px); 
+  filter: blur(4px); */
+}
+/* .projectLinkImage:hover {
+    webkit-filter: none; 
+    filter: none;
+} */
+
+/* ////////////// content /////////////// */
+.contentWrapper{
+/*     overflow: hidden; */
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: space-between;
+    overflow-y: scroll;
+    padding-right: 1%;
+}
+.ImageWrapper{
+    width: 65%;
+    height: 100%;
+    padding-top: 1%;
+/*     padding-right: 1%; */
+    display: flex;
+    flex-direction: column;
+/*     justify-content: flex-end; */
+    gap: 20px;
+  object-position: right;
+}
+
+.projectImage {
+  object-fit: contain;
+  height: 95%;
+  max-width: 100%;
+  object-position: right;
+}
+
+.projectImage2 {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.projectVideo{
+  height: 100%;
+  width: auto;
+  float: right;
+}
+  projectVideo2{
+  height: auto;
+  width: 100%;
+  float: left;
+  }
+
+.videoWrapper{
+/*   object-fit: contain; */
+  height: 85%;
+  max-width: 100%;
+/* /*   display: flex;
+  justify-content: flex-end; */
+}
+
+.textWrapper{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 35%;
+  height: 100%;
+  color: #bebebe;
+}
+
+.textInfo{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 35%;
+  height: 100%;
+  color: #bebebe;
+}
+
+/* /////////////////////////////// mobile /////////////// */
+@media only screen and (max-width: 911px) {
+  /* For mobile phones: */
+  body{
+    flex-direction: column;
+  }
+  .leftContainer {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1%;
+    
+  }
+  
+ .rightContainer {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+/*      gap: 15px; */
+   padding-top: 0;
+   padding-left: 1%;
+   padding-right: 0;
+
+}
+  
+  .topInfo{
+  display: block;
+  color: #bebebe;
+  position: -webkit-sticky;
+  position: sticky;
+  background: black;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  gap: 0px;
+
+}
+  
+.leftInfo{
+  display: none;
+}
+  
+  .projectWrapper {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+/*     justify-content: flex-start; */
+    gap: 5px;
+    margin-top: 0px;
+}
+  
+  .projectLink{
+  width: 100%;
+  justify-content: flex-start;
+    
+}
+
+  .projectLinkImage{
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+    
+}
+  
+  .projectTextContent {
+    width: 100%;
+    height: 100%;
+    color: #bebebe;
+  padding-right: 10px;
+  position:static;
+  margin-block-end: 15px;
+/*     background: blue; */
+}
+
+  p{
+    margin: 0;
+  }
+  
+  .contact {
+  text-decoration: underline;
+  color: #bebebe;
+  margin-block-end: 2px;
+/*   font-family: Con130; */
+}
+
+/* ////////////////////////// */
+  .contentWrapper{
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    justify-content:flex-start;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+  .ImageWrapper{
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-position: left;
+}
+
+.projectImage {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  object-position: left;
+}
+
+.projectImage2 {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.projectVideo{
+  height: auto;
+  width: 100%;
+  float: left;
+}
+
+  .projectVideo2{
+  height: auto;
+  width: 100%;
+  float: left;
+}
+
+.videoWrapper{
+/*   object-fit: contain; */
+  height: auto;
+  width: 100%;
+/* /*   display: flex;
+  justify-content: flex-end; */
+}
+
+.textWrapper{
+  position: -webkit-sticky;
+  position: sticky;
+  background: black;
+  top: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 1%;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+}
+
+/* .textInfo{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 35%;
+  height: 100%;
+  color: #bebebe;
+} */
+  
+}
